@@ -14,7 +14,7 @@ with(this){return _c('h2',{attrs:{"id":"product-scope"}},[_v("Product Scope"),_c
 with(this){return _c('h3',{attrs:{"id":"target-user-profile"}},[_v("Target User Profile"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#target-user-profile","onclick":"event.stopPropagation()"}})])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_c('p',[_c('strong',[_v("Efficient Management:")]),_c('br'),_v("\nHas a need to manage a significant number of household records and engagement sessions efficiently.")])]),_v(" "),_c('li',[_c('p',[_c('strong',[_v("Monitoring Household Conditions:")]),_c('br'),_v("\nHas a need to take note of household conditions when there are areas of concern.")])]),_v(" "),_c('li',[_c('p',[_c('strong',[_v("Desktop Preference:")]),_c('br'),_v("\nPrefers desktop applications over web or mobile solutions for stability and performance.")])]),_v(" "),_c('li',[_c('p',[_c('strong',[_v("CLI Enthusiast:")]),_c('br'),_v("\nPrefers typing over mouse interactions, favoring a Command Line Interface (CLI) for speed.")])]),_v(" "),_c('li',[_c('p',[_c('strong',[_v("Comfort with CLI:")]),_c('br'),_v("\nIs reasonably comfortable using CLI applications, with minimal reliance on Graphical User Interfaces (GUI).")])])])}
+with(this){return _c('ul',[_c('li',[_c('p',[_c('strong',[_v("Efficient Management:")]),_v("\nHas a need to manage a significant number of household records and engagement sessions efficiently.")])]),_v(" "),_c('li',[_c('p',[_c('strong',[_v("Monitoring Household Conditions:")]),_v("\nHas a need to take note of household conditions when there are areas of concern.")])]),_v(" "),_c('li',[_c('p',[_c('strong',[_v("Desktop Preference:")]),_v("\nPrefers desktop applications over web or mobile solutions for stability and performance.")])]),_v(" "),_c('li',[_c('p',[_c('strong',[_v("CLI Enthusiast:")]),_v("\nPrefers typing over mouse interactions, favoring a Command Line Interface (CLI) for speed.")])]),_v(" "),_c('li',[_c('p',[_c('strong',[_v("Comfort with CLI:")]),_v("\nIs reasonably comfortable using CLI applications, with minimal reliance on Graphical User Interfaces (GUI).")])])])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"value-proposition"}},[_v("Value Proposition"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#value-proposition","onclick":"event.stopPropagation()"}})])}
@@ -359,10 +359,10 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("User selects the option to add a
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("4a1. System displays an error message.")]),_v(" "),_c('li',[_v("4a2. User corrects input and retries."),_c('br'),_v("\nUse case resumes from step 4.")])])}
+with(this){return _c('ul',[_c('li',[_v("4a1. System displays an error message.")]),_v(" "),_c('li',[_v("4a2. User corrects input and retries.\nUse case resumes from step 4.")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("6a1. System displays an error message indicating the failure.")]),_v(" "),_c('li',[_v("6a2. System prompts the user to retry saving.")]),_v(" "),_c('li',[_v("6a3. If the issue persists, the system logs the error for troubleshooting."),_c('br'),_v("\nUse case resumes from step 3 or ends if saving is unsuccessful.")])])}
+with(this){return _c('ul',[_c('li',[_v("6a1. System displays an error message indicating the failure.")]),_v(" "),_c('li',[_v("6a2. System prompts the user to retry saving.")]),_v(" "),_c('li',[_v("6a3. If the issue persists, the system logs the error for troubleshooting.\nUse case resumes from step 3 or ends if saving is unsuccessful.")])])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"use-case-u2-schedule-engagement-session"}},[_v("Use Case: U2. Schedule Engagement Session"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-u2-schedule-engagement-session","onclick":"event.stopPropagation()"}})])}
@@ -377,7 +377,7 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("User selects a household.")])]),
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("2a1. System displays an error message.")]),_v(" "),_c('li',[_v("2a2. User corrects input and retries."),_c('br'),_v("\nUse case resumes from step 2.")])])}
+with(this){return _c('ul',[_c('li',[_v("2a1. System displays an error message.")]),_v(" "),_c('li',[_v("2a2. User corrects input and retries.\nUse case resumes from step 2.")])])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"use-case-u3-edit-household-record"}},[_v("Use Case: U3. Edit Household Record"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-u3-edit-household-record","onclick":"event.stopPropagation()"}})])}
@@ -392,7 +392,7 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("User selects a household to edit
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("4a1. System displays an error message.")]),_v(" "),_c('li',[_v("4a2. User corrects input and retries."),_c('br'),_v("\nUse case resumes from step 4.")])])}
+with(this){return _c('ul',[_c('li',[_v("4a1. System displays an error message.")]),_v(" "),_c('li',[_v("4a2. User corrects input and retries.\nUse case resumes from step 4.")])])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"use-case-u4-prevent-double-booking"}},[_v("Use Case: U4. Prevent Double-Booking"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-u4-prevent-double-booking","onclick":"event.stopPropagation()"}})])}
@@ -407,7 +407,7 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("User selects a date and time to 
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("2a1. System displays a conflict warning."),_c('br'),_v("\nUse case ends.")])])}
+with(this){return _c('ul',[_c('li',[_v("2a1. System displays a conflict warning.\nUse case ends.")])])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"use-case-u5-view-household-session-history"}},[_v("Use Case: U5. View Household Session History"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-u5-view-household-session-history","onclick":"event.stopPropagation()"}})])}
@@ -422,7 +422,7 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("User selects a household.")])]),
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("3a1. System displays a message indicating no history available."),_c('br'),_v("\nUse case ends.")])])}
+with(this){return _c('ul',[_c('li',[_v("3a1. System displays a message indicating no history available.\nUse case ends.")])])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"use-case-u6-search-for-household"}},[_v("Use Case: U6. Search for Household"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-u6-search-for-household","onclick":"event.stopPropagation()"}})])}
@@ -437,7 +437,7 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("User enters a keyword in the sea
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("2a1. System displays a \"No households found\" message."),_c('br'),_v("\nUse case ends.")])])}
+with(this){return _c('ul',[_c('li',[_v("2a1. System displays a \"No households found\" message.\nUse case ends.")])])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"use-case-u7-delete-household"}},[_v("Use Case: U7. Delete Household"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-u7-delete-household","onclick":"event.stopPropagation()"}})])}
@@ -452,10 +452,10 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("User enters "),_c('code',{pre:tr
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("2a1. System displays error message: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("\"Error: Household ID not found.\"")]),_c('br'),_v("\nUse case ends.")])])}
+with(this){return _c('ul',[_c('li',[_v("2a1. System displays error message: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("\"Error: Household ID not found.\"")]),_v("\nUse case ends.")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("3a1. System aborts the deletion process."),_c('br'),_v("\nUse case ends.")])])}
+with(this){return _c('ul',[_c('li',[_v("3a1. System aborts the deletion process.\nUse case ends.")])])}
 },function anonymous(
 ) {
 with(this){return _c('ul',[_c('li',[_v("5a1. System prompts user to confirm deleting associated sessions.")]),_v(" "),_c('li',[_v("5a2. User confirms or cancels deletion.\n"),_c('ul',[_c('li',[_v("If confirmed, system deletes the household and linked sessions.")]),_v(" "),_c('li',[_v("If canceled, use case ends.")])])])])}
@@ -473,25 +473,25 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("User enters "),_c('code',{pre:tr
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("2a1. System displays an error message: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("\"Error: Invalid session index.\"")]),_c('br'),_v("\nUse case ends.")])])}
+with(this){return _c('ul',[_c('li',[_v("2a1. System displays an error message: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("\"Error: Invalid session index.\"")]),_v("\nUse case ends.")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("3a1. System displays an error message: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("\"Error: Date must be in DD-MM-YYYY format.\"")])]),_v(" "),_c('li',[_v("3a2. User corrects input and retries."),_c('br'),_v("\nUse case resumes from step 1.")])])}
+with(this){return _c('ul',[_c('li',[_v("3a1. System displays an error message: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("\"Error: Date must be in DD-MM-YYYY format.\"")])]),_v(" "),_c('li',[_v("3a2. User corrects input and retries.\nUse case resumes from step 1.")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("3b. A session already exists at the new date/time ("),_c('strong',[_v("See Use Case: Prevent Double-Booking (U4)")]),_v(").")])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("3b1. System displays an error message: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("\"Error: Time slot unavailable due to scheduling conflict.\"")])]),_v(" "),_c('li',[_v("3b2. User selects a different time or cancels."),_c('br'),_v("\nUse case resumes from step 1 or ends if canceled.")])])}
+with(this){return _c('ul',[_c('li',[_v("3b1. System displays an error message: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("\"Error: Time slot unavailable due to scheduling conflict.\"")])]),_v(" "),_c('li',[_v("3b2. User selects a different time or cancels.\nUse case resumes from step 1 or ends if canceled.")])])}
 },function anonymous(
 ) {
 with(this){return _c('p',[_v("3c. Empty note provided when "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("n/NOTE")]),_v(" is used.")])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("3c1. System displays an error message: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("\"Error: Note cannot be empty if provided.\"")])]),_v(" "),_c('li',[_v("3c2. User corrects input and retries."),_c('br'),_v("\nUse case resumes from step 1.")])])}
+with(this){return _c('ul',[_c('li',[_v("3c1. System displays an error message: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("\"Error: Note cannot be empty if provided.\"")])]),_v(" "),_c('li',[_v("3c2. User corrects input and retries.\nUse case resumes from step 1.")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("4a1. System displays an error message: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("\"Error: Unable to save changes. Please try again.\"")])]),_v(" "),_c('li',[_v("4a2. User retries or exits."),_c('br'),_v("\nUse case resumes from step 1 or ends if unsuccessful.")])])}
+with(this){return _c('ul',[_c('li',[_v("4a1. System displays an error message: "),_c('code',{pre:true,attrs:{"class":"hljs inline no-lang"}},[_v("\"Error: Unable to save changes. Please try again.\"")])]),_v(" "),_c('li',[_v("4a2. User retries or exits.\nUse case resumes from step 1 or ends if unsuccessful.")])])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"use-case-u9-clear-all-entries"}},[_v("Use Case: U9. Clear All Entries"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-u9-clear-all-entries","onclick":"event.stopPropagation()"}})])}
@@ -506,10 +506,10 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("User enters "),_c('code',{pre:tr
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("2a1. System aborts the clearing process."),_c('br'),_v("\nUse case ends.")])])}
+with(this){return _c('ul',[_c('li',[_v("2a1. System aborts the clearing process.\nUse case ends.")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("4a1. System displays an error message.")]),_v(" "),_c('li',[_v("4a2. User retries or exits."),_c('br'),_v("\nUse case resumes from step 2 or ends if the issue persists.")])])}
+with(this){return _c('ul',[_c('li',[_v("4a1. System displays an error message.")]),_v(" "),_c('li',[_v("4a2. User retries or exits.\nUse case resumes from step 2 or ends if the issue persists.")])])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"use-case-u10-receive-session-notification"}},[_v("Use Case: U10. Receive Session Notification"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#use-case-u10-receive-session-notification","onclick":"event.stopPropagation()"}})])}
@@ -524,10 +524,10 @@ with(this){return _c('ol',[_c('li',[_c('p',[_v("System checks upcoming sessions.
 with(this){return _c('p',[_c('strong',[_v("Extensions:")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("2a1. System does not send a notification."),_c('br'),_v("\nUse case ends.")])])}
+with(this){return _c('ul',[_c('li',[_v("2a1. System does not send a notification.\nUse case ends.")])])}
 },function anonymous(
 ) {
-with(this){return _c('ul',[_c('li',[_v("2b1. System logs the error and retries.")]),_v(" "),_c('li',[_v("2b2. If the issue persists, system notifies the user in-app."),_c('br'),_v("\nUse case resumes from step 3.")])])}
+with(this){return _c('ul',[_c('li',[_v("2b1. System logs the error and retries.")]),_v(" "),_c('li',[_v("2b2. If the issue persists, system notifies the user in-app.\nUse case resumes from step 3.")])])}
 },function anonymous(
 ) {
 with(this){return _c('h3',{attrs:{"id":"non-functional-requirements"}},[_v("Non-Functional Requirements"),_c('a',{staticClass:"fa fa-anchor",attrs:{"href":"#non-functional-requirements","onclick":"event.stopPropagation()"}})])}
@@ -566,6 +566,6 @@ with(this){return _c('h3',{attrs:{"id":"saving-data"}},[_v("Saving data"),_c('a'
 with(this){return _c('ol',[_c('li',[_c('p',[_v("Dealing with missing/corrupted data files")]),_v(" "),_c('ol',[_c('li',[_c('em',[_v("{explain how to simulate a missing/corrupted file, and the expected behavior}")])])])]),_v(" "),_c('li',[_c('p',[_c('em',[_v("{ more test cases … }")])])])])}
 },function anonymous(
 ) {
-with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.5.3")]),_v(", generated on Fri, 14 Mar 2025, 16:13:03 GMT+8]")])])])}
+with(this){return _c('footer',[_c('div',{staticClass:"text-center"},[_c('small',[_v("["),_c('span',[_c('strong',[_v("Powered by")])]),_v(" "),_c('img',{attrs:{"src":"https://markbind.org/favicon.ico","width":"30"}}),_v(" "),_c('a',{attrs:{"href":"https://markbind.org/"}},[_v("MarkBind 5.6.0")]),_v(", generated on Sun, 16 Mar 2025, 14:20:05 GMT+8]")])])])}
 }];
   
