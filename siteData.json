@@ -126,16 +126,17 @@
         "delete-a-session": "Delete a session",
         "list-sessions": "List sessions",
         "user-interface-navigation": "User Interface Navigation",
-        "household-panel": "Household panel",
-        "session-panel": "Session panel",
-        "command-box": "Command box",
-        "result-display": "Result display",
+        "1-household-panel": "1. Household panel",
+        "2-session-panel": "2. Session panel",
+        "3-command-box": "3. Command box",
+        "4-feedback-display": "4. Feedback display",
         "general-commands": "General Commands",
         "clear-data": "Clear data",
         "help": "Help",
         "exiting-the-program": "Exiting the program",
         "saving-the-data": "Saving the data",
-        "command-summary": "Command summary"
+        "command-summary": "Command summary",
+        "glossary": "Glossary"
       },
       "headingKeywords": {}
     },
