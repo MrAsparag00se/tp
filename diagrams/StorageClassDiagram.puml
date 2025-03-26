@@ -1,43 +1,48 @@
 @startuml
-!include style.puml
-skinparam arrowThickness 1.1
-skinparam arrowColor STORAGE_COLOR
-skinparam classBackgroundColor STORAGE_COLOR
 
-package Storage as StoragePackage {
+skinparam packageTitleFontColor #FFFFFF
+skinparam packageTitleBackgroundColor #8E7F29
+skinparam packageBorderColor #C6AA46
 
-package "UserPrefs Storage" #F4F6F6{
-Class "<<interface>>\nUserPrefsStorage" as UserPrefsStorage
-Class JsonUserPrefsStorage
+' Top-level interface in the middle
+interface Storage
+
+' Middle-level class that depends on both storages
+class StorageManager
+
+' Left side: HouseholdBook Storage box
+package "HouseholdBook Storage" {
+    interface HouseholdBookStorage
+    class JsonHouseholdBookStorage
+    class JsonSerializableHouseholdBook
+    class JsonAdaptedHousehold
+    class JsonAdaptedSession
+    class JsonAdaptedTag
 }
 
-Class "<<interface>>\nStorage" as Storage
-Class StorageManager
-
-package "AddressBook Storage" #F4F6F6{
-Class "<<interface>>\nAddressBookStorage" as AddressBookStorage
-Class JsonAddressBookStorage
-Class JsonSerializableAddressBook
-Class JsonAdaptedPerson
-Class JsonAdaptedTag
+' Right side: UserPrefs Storage box
+package "UserPrefs Storage" {
+    interface UserPrefsStorage
+    class JsonUserPrefsStorage
 }
 
-}
+' Show that Storage extends both HouseholdBookStorage and UserPrefsStorage
+HouseholdBookStorage -up-|> Storage
+UserPrefsStorage -up-|> Storage
 
-Class HiddenOutside #FFFFFF
-HiddenOutside ..> Storage
+' StorageManager implements/uses the Storage interface
+Storage <|-- StorageManager
 
-StorageManager .up.|> Storage
-StorageManager -up-> "1" UserPrefsStorage
-StorageManager -up-> "1" AddressBookStorage
+' Show usage and dependency from StorageManager to the actual implementations
+StorageManager --> JsonHouseholdBookStorage
+StorageManager --> JsonUserPrefsStorage
 
-Storage -left-|> UserPrefsStorage
-Storage -right-|> AddressBookStorage
+' Show that JsonHouseholdBookStorage uses JsonSerializableHouseholdBook
+JsonHouseholdBookStorage --> JsonSerializableHouseholdBook
 
-JsonUserPrefsStorage .up.|> UserPrefsStorage
-JsonAddressBookStorage .up.|> AddressBookStorage
-JsonAddressBookStorage ..> JsonSerializableAddressBook
-JsonSerializableAddressBook --> "*" JsonAdaptedPerson
-JsonAdaptedPerson --> "*" JsonAdaptedTag
+' Inside JsonSerializableHouseholdBook, we have references to adapted classes
+JsonSerializableHouseholdBook --> JsonAdaptedHousehold
+JsonSerializableHouseholdBook --> JsonAdaptedSession
+JsonAdaptedHousehold --> JsonAdaptedTag
 
 @enduml
