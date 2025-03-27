@@ -4,9 +4,9 @@ skinparam ArrowFontStyle plain
 
 box Logic LOGIC_COLOR_T1
 participant ":LogicManager" as LogicManager LOGIC_COLOR
-participant ":AddressBookParser" as AddressBookParser LOGIC_COLOR
-participant ":DeleteCommandParser" as DeleteCommandParser LOGIC_COLOR
-participant "d:DeleteCommand" as DeleteCommand LOGIC_COLOR
+participant ":HouseholdBookParser" as HouseholdBookParser LOGIC_COLOR
+participant ":DeleteHouseholdCommandParser" as DeleteHouseholdCommandParser LOGIC_COLOR
+participant "d:DeleteHouseholdCommand" as DeleteHouseholdCommand LOGIC_COLOR
 participant "r:CommandResult" as CommandResult LOGIC_COLOR
 end box
 
@@ -14,57 +14,95 @@ box Model MODEL_COLOR_T1
 participant "m:Model" as Model MODEL_COLOR
 end box
 
-[-> LogicManager : execute("delete 1")
+box Storage STORAGE_COLOR_T1
+participant ":JsonHouseholdBookStorage" as JsonHouseholdBookStorage STORAGE_COLOR
+end box
+
+[-> LogicManager : execute("delete-household id/H000001")
 activate LogicManager
 
-LogicManager -> AddressBookParser : parseCommand("delete 1")
-activate AddressBookParser
+LogicManager -> HouseholdBookParser : parseCommand("delete-household id/H000001")
+activate HouseholdBookParser
 
-create DeleteCommandParser
-AddressBookParser -> DeleteCommandParser
-activate DeleteCommandParser
+create DeleteHouseholdCommandParser
+HouseholdBookParser -> DeleteHouseholdCommandParser
+activate DeleteHouseholdCommandParser
 
-DeleteCommandParser --> AddressBookParser
-deactivate DeleteCommandParser
+DeleteHouseholdCommandParser --> HouseholdBookParser
+deactivate DeleteHouseholdCommandParser
 
-AddressBookParser -> DeleteCommandParser : parse("1")
-activate DeleteCommandParser
+HouseholdBookParser -> DeleteHouseholdCommandParser : parse("id/H000001")
+activate DeleteHouseholdCommandParser
 
-create DeleteCommand
-DeleteCommandParser -> DeleteCommand
-activate DeleteCommand
+create DeleteHouseholdCommand
+DeleteHouseholdCommandParser -> DeleteHouseholdCommand
+activate DeleteHouseholdCommand
 
-DeleteCommand --> DeleteCommandParser :
-deactivate DeleteCommand
+DeleteHouseholdCommand --> DeleteHouseholdCommandParser :
+deactivate DeleteHouseholdCommand
 
-DeleteCommandParser --> AddressBookParser : d
-deactivate DeleteCommandParser
+DeleteHouseholdCommandParser --> HouseholdBookParser : d
+deactivate DeleteHouseholdCommandParser
 'Hidden arrow to position the destroy marker below the end of the activation bar.
-DeleteCommandParser -[hidden]-> AddressBookParser
-destroy DeleteCommandParser
+DeleteHouseholdCommandParser -[hidden]-> HouseholdBookParser
+destroy DeleteHouseholdCommandParser
 
-AddressBookParser --> LogicManager : d
-deactivate AddressBookParser
+HouseholdBookParser --> LogicManager : d
+deactivate HouseholdBookParser
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+HouseholdBookParser -[hidden]-> LogicManager
+destroy HouseholdBookParser
 
-LogicManager -> DeleteCommand : execute(m)
-activate DeleteCommand
+LogicManager -> DeleteHouseholdCommand : execute(m)
+activate DeleteHouseholdCommand
 
-DeleteCommand -> Model : deletePerson(1)
+DeleteHouseholdCommand -> DeleteHouseholdCommand : showConfirmationDialog(household)
+activate DeleteHouseholdCommand
+DeleteHouseholdCommand --> DeleteHouseholdCommand : true
+deactivate DeleteHouseholdCommand
+
+
+DeleteHouseholdCommand -> Model : removeHousehold(H000001)
 activate Model
 
-Model --> DeleteCommand
-deactivate Model
+Model --> DeleteHouseholdCommand
 
 create CommandResult
-DeleteCommand -> CommandResult
+DeleteHouseholdCommand -> CommandResult
 activate CommandResult
 
-CommandResult --> DeleteCommand
+CommandResult --> DeleteHouseholdCommand
 deactivate CommandResult
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+CommandResult -[hidden]-> DeleteHouseholdCommand
+destroy CommandResult
 
-DeleteCommand --> LogicManager : r
-deactivate DeleteCommand
+DeleteHouseholdCommand --> LogicManager : r
+deactivate DeleteHouseholdCommand
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+DeleteHouseholdCommand -[hidden]-> LogicManager
+destroy DeleteHouseholdCommand
 
-[<--LogicManager
+LogicManager -> Model : getHouseholdBook()
+Model -> JsonHouseholdBookStorage : saveHouseholdBook()
+
+activate JsonHouseholdBookStorage
+'JsonHouseholdBookStorage --> Model'
+deactivate JsonHouseholdBookStorage
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+JsonHouseholdBookStorage -[hidden]-> Model
+destroy JsonHouseholdBookStorage
+
+'Model --> LogicManager'
+deactivate Model
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+Model -[hidden]-> LogicManager
+destroy Model
+
+[<--LogicManager : r
 deactivate LogicManager
+'Hidden arrow to position the destroy marker below the end of the activation bar.
+LogicManager -[hidden]-> HouseholdBookParser
+destroy LogicManager
+
 @enduml
