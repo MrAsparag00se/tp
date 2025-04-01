@@ -1,3 +1,7 @@
+:root {
+  --sticky-header-height: 60px;
+}
+
 mark {
   background-color: #ff0;
   border-radius: 5px;
@@ -60,10 +64,10 @@ mark {
   padding: 0.8rem 20px 0 20px;
   transition: 0.4s;
   -webkit-transition: 0.4s;
+  order: 1;
 }
 
-#site-nav,
-#page-nav {
+#site-nav {
   display: flex;
   flex-direction: column;
   position: sticky;
@@ -72,9 +76,7 @@ mark {
   max-width: 300px;
   max-height: calc(100vh - var(--sticky-header-height));
   width: 300px;
-}
-
-#site-nav {
+  order: 0;
   border-right: 1px solid lightgrey;
   padding-bottom: 20px;
   z-index: 999;
@@ -90,6 +92,15 @@ mark {
 }
 
 #page-nav {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: var(--sticky-header-height);
+  flex: 0 0 auto;
+  max-width: 300px;
+  max-height: calc(100vh - var(--sticky-header-height));
+  width: 300px;
+  order: 2;
   border-left: 1px solid lightgrey;
 }
 
@@ -99,72 +110,41 @@ mark {
   }
 }
 
-/* Bootstrap medium(md) responsive breakpoint */
 @media screen and (max-width: 991.98px) {
   #site-nav {
     display: none;
   }
 }
 
-/* Bootstrap small(sm) responsive breakpoint */
 @media (max-width: 767.98px) {
   .indented {
     padding-left: 10px;
   }
-
   #content-wrapper {
     padding: 0 10px;
   }
 }
 
-/* Bootstrap extra small(xs) responsive breakpoint */
 @media screen and (max-width: 575.98px) {
   #site-nav {
     display: none;
   }
 }
 
-/* Hide site navigation when printing */
 @media print {
-  #site-nav {
+  #site-nav, #page-nav {
     display: none;
   }
-
-  #page-nav {
-    display: none;
-  }
-
-  /* Reduce font size when printing */
-  h1 {
-      font-size: 1.2rem !important;
-  }
-  h2 {
-      font-size: 1.0rem !important;
-  }
-  h3 {
-      font-size: 0.9rem !important;
-  }
-  h4 {
-      font-size: 0.8rem !important;
-  }
-  h5 {
-      font-size: 0.7rem !important;
-  }
-  body {
-      font-size: 0.65rem !important;
-  }
-  .btn {
-      font-size: 0.65rem !important;
-  }
-  img {
-      zoom: 0.8;  /* might not work on some browsers */
-  }
+  h1 { font-size: 1.2rem !important; }
+  h2 { font-size: 1.0rem !important; }
+  h3 { font-size: 0.9rem !important; }
+  h4 { font-size: 0.8rem !important; }
+  h5 { font-size: 0.7rem !important; }
+  body { font-size: 0.65rem !important; }
+  .btn { font-size: 0.65rem !important; }
+  img { zoom: 0.8; }
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2, h3, h4, h5, h6 {
   color: #e46c0a;
 }

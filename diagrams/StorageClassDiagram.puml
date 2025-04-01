@@ -12,6 +12,7 @@ class StorageManager
 
 ' Left side: HouseholdBook Storage box
 package "HouseholdBook Storage" {
+    interface ABC
     interface HouseholdBookStorage
     class JsonHouseholdBookStorage
     class JsonSerializableHouseholdBook
