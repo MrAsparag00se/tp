@@ -107,6 +107,7 @@
     },
     {
       "src": "UserGuide.md",
+      "title": "User guide",
       "headings": {
         "em-social-user-guide": "Em-Social User Guide",
         "introduction": "Introduction",
@@ -121,13 +122,12 @@
         "add-a-household": "Add a household",
         "edit-a-household": "Edit a household",
         "delete-a-household": "Delete a household",
-        "list-all-households": "List all households",
         "find-households": "Find households",
+        "list-all-households": "List all households",
         "session-management": "Session Management",
         "add-a-session": "Add a session",
         "edit-a-session": "Edit a session",
         "delete-a-session": "Delete a session",
-        "list-sessions": "List sessions",
         "view-household-sessions": "View household sessions",
         "general-commands": "General Commands",
         "clear-data": "Clear data",

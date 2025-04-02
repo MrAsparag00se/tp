@@ -11,7 +11,7 @@ package "Parser Classes" as ParserClasses{
 Class "<<interface>>\nABC" as ABC
 Class CommandResult
 Class "{abstract}\nCommand" as Command
-
+Class XYZCommand
 
 Class "<<interface>>\nLogic" as Logic
 Class LogicManager

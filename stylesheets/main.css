@@ -135,8 +135,8 @@ mark {
   #site-nav, #page-nav {
     display: none;
   }
-  h1 { font-size: 1.2rem !important; }
-  h2 { font-size: 1.0rem !important; }
+  h1 { font-size: 1.5rem !important; }
+  h2 { font-size: 1.2rem !important; }
   h3 { font-size: 0.9rem !important; }
   h4 { font-size: 0.8rem !important; }
   h5 { font-size: 0.7rem !important; }
@@ -145,6 +145,15 @@ mark {
   img { zoom: 0.8; }
 }
 
+h1 {
+  font-size: 1.5rem;
+  color: #f96815
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
 h2, h3, h4, h5, h6 {
-  color: #e46c0a;
+  color: #ff8c00;
 }
