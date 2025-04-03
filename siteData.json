@@ -65,6 +65,10 @@
         "use-case-u8-edit-session-with-optional-notes": "Use Case: U8. Edit Session (with Optional Notes)",
         "use-case-u9-clear-all-entries": "Use Case: U9. Clear All Entries",
         "non-functional-requirements": "Non-Functional Requirements:",
+        "manual-testing-instructions-for-em-social": "Manual Testing Instructions for Em Social",
+        "download-em-social": "Download Em Social:",
+        "setup": "Setup:",
+        "launching-and-shutting-down-the-application": "Launching and Shutting Down the Application",
         "glossary": "Glossary"
       },
       "headingKeywords": {}
