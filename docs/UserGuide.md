@@ -237,13 +237,12 @@ Found 2 household(s) matching: Tan Lee
 
 Example of usage (with phrase matching):
 ```
-find "Tan Family"
+find "Lee Family"
 ```
 
 Expected outcome (with phrase matching):
 ```
-1 households found:
-1. Tan Family (ID: H000001)
+Found 1 household(s) matching: "Lee Family"
 ```
 
 ![find-with-quotes](images/find-with-quotes.png)
