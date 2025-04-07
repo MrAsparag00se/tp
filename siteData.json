@@ -38,8 +38,7 @@
     {
       "src": "DeveloperGuide.md",
       "headings": {
-        "em-social-developer-guide": "Em-Social Developer Guide",
-        "documentation-logging-testing-configuration-dev-ops": "Documentation, logging, testing, configuration, dev-ops",
+        "em-social-developer-guide": "#Em-Social Developer Guide",
         "product-scope": "Product Scope",
         "target-user-profile": "Target User Profile",
         "value-proposition": "Value Proposition",
@@ -64,11 +63,13 @@
         "use-case-u8-edit-session-with-optional-notes": "Use Case: U8. Edit Session (with Optional Notes)",
         "use-case-u9-clear-all-entries": "Use Case: U9. Clear All Entries",
         "non-functional-requirements": "Non-Functional Requirements:",
-        "manual-testing-instructions-for-em-social": "Manual Testing Instructions for Em Social",
+        "glossary": "Glossary",
+        "appendix-manual-testing-instructions-for-em-social": "Appendix: Manual Testing Instructions for Em Social",
         "download-em-social": "Download Em Social:",
         "setup": "Setup:",
         "launching-and-shutting-down-the-application": "Launching and Shutting Down the Application",
-        "glossary": "Glossary"
+        "simulating-missing-corrupted-data-files-in-em-social": "Simulating Missing/Corrupted Data Files in Em-Social",
+        "appendix-planned-enhancements": "Appendix: Planned Enhancements"
       },
       "headingKeywords": {}
     },
