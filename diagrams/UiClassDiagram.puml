@@ -4,57 +4,67 @@ skinparam arrowThickness 1.1
 skinparam arrowColor UI_COLOR_T4
 skinparam classBackgroundColor UI_COLOR
 
-package UI <<Rectangle>>{
-Class "<<interface>>\nUi" as Ui
-Class "{abstract}\nUiPart" as UiPart
-Class UiManager
-Class MainWindow
-Class HelpWindow
-Class ResultDisplay
-Class PersonListPanel
-Class PersonCard
-Class StatusBarFooter
-Class CommandBox
+package UI <<Rectangle>> {
+  Class "<<interface>>\nUi" as Ui
+  Class "{abstract}\nUiPart" as UiPart
+  Class UiManager
+  Class MainWindow
+  Class HelpWindow
+  Class ResultDisplay
+  Class CommandBox
+  Class HouseholdListPanel
+  Class HouseholdCard
+  Class SessionListPanel
+  Class SessionCard
+  Class StatusBarFooter
 }
 
 package Model <<Rectangle>> {
-Class HiddenModel #FFFFFF
+  Class HiddenModel #FFFFFF
 }
 
 package Logic <<Rectangle>> {
-Class HiddenLogic #FFFFFF
+  Class HiddenLogic #FFFFFF
 }
 
 Class HiddenOutside #FFFFFF
 HiddenOutside ..> Ui
 
+' UI hierarchy and associations
 UiManager .left.|> Ui
 UiManager -down-> "1" MainWindow
-MainWindow *-down->  "1" CommandBox
+
+MainWindow *-down-> "1" CommandBox
 MainWindow *-down-> "1" ResultDisplay
-MainWindow *-down-> "1" PersonListPanel
+MainWindow *-down-> "1" HouseholdListPanel
+MainWindow *-down-> "1" SessionListPanel
 MainWindow *-down-> "1" StatusBarFooter
 MainWindow --> "0..1" HelpWindow
 
-PersonListPanel -down-> "*" PersonCard
+HouseholdListPanel -down-> "*" HouseholdCard
+SessionListPanel -down-> "*" SessionCard
 
 MainWindow -left-|> UiPart
 
 ResultDisplay --|> UiPart
 CommandBox --|> UiPart
-PersonListPanel --|> UiPart
-PersonCard --|> UiPart
+HouseholdListPanel --|> UiPart
+HouseholdCard --|> UiPart
+SessionListPanel --|> UiPart
+SessionCard --|> UiPart
 StatusBarFooter --|> UiPart
 HelpWindow --|> UiPart
 
-PersonCard ..> Model
-UiManager -right-> Logic
-MainWindow -left-> Logic
+' Model and Logic associations
+HouseholdCard ..> HiddenModel
 
-PersonListPanel -[hidden]left- HelpWindow
+UiManager -right-> HiddenLogic
+MainWindow -left-> HiddenLogic
+
+' Hidden layout links
+HouseholdListPanel -[hidden]left- HelpWindow
 HelpWindow -[hidden]left- CommandBox
 CommandBox -[hidden]left- ResultDisplay
 ResultDisplay -[hidden]left- StatusBarFooter
-
 MainWindow -[hidden]-|> UiPart
 @enduml
