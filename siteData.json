@@ -114,7 +114,7 @@
       "headings": {
         "em-social-user-guide": "Em-Social User Guide",
         "introduction": "👋 Introduction",
-        "key-benefits": "Key Benefits",
+        "why-em-social": "Why Em-Social?",
         "table-of-contents": "Table of Contents",
         "quick-start": "🚀 Quick Start",
         "user-interface-overview": "🖥️ User Interface Overview",
@@ -134,7 +134,7 @@
         "clear-data": "Clear data",
         "help": "Help",
         "exiting-the-program": "Exiting the program",
-        "tips-for-effective-use": "💡 Tips for Effective Use",
+        "make-the-most-out-of-em-social": "💡 Make the Most out of Em-Social",
         "frequently-asked-questions": "🤔 Frequently Asked Questions",
         "glossary": "📖 Glossary",
         "command-summary": "📋 Command Summary"
@@ -145,7 +145,7 @@
       "src": "index.md",
       "title": "",
       "headings": {
-        "addressbook-level-3": "AddressBook Level-3"
+        "em-social": "Em-Social"
       },
       "headingKeywords": {}
     },
