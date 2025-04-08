@@ -7,7 +7,7 @@
 - [Implementation](#implementation)
 - [Documentation, logging, testing, configurations, dev-ops](#documentation-logging-testing-configuration-dev-ops)
 - [Appendix: Requirements](#appendix-requirements)
-- [Appendix: Instructions for Manual Testing](#instructions-for-manual-testing)
+- [Appendix: Instructions for Manual Testing](#appendix-instructions-for-manual-testing)
 - [Appendix: Planned Enhancements](#appendix-planned-enhancements)
 
 --------------------------------------------------------------------------------------------------------------------
