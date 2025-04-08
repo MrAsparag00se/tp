@@ -555,9 +555,6 @@ You can also use the **GUI button**:
 ❓**Q: Why am I unable to create multiple households with the same name?**  
 ✅A: By preventing households with the same name or phone number from being saved, Em-Social ensures you save household details while **minimizing ambiguity**.  
 
-❓**Q: Why am I able to edit sessions to past dates?**  
-✅A: We understand that there are times when sessions with the households may be rearranged and not recorded. So, Em-Social provides this functionality to ensure that you can rearrange sessions at your own pace.
-
 ❓**Q: Why am I able to add sessions one minute apart?**  
 ✅A: As social workers, your sessions could vary from quickly giving out hampers to a more extensive check-in session, so we leave the duration to you!
 
