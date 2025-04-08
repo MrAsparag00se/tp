@@ -8,10 +8,10 @@ package Logic as LogicPackage {
 
 package "Parser Classes" as ParserClasses{
 }
-Class "<<interface>>\nABC" as ABC
+Class XYZCommand
 Class CommandResult
 Class "{abstract}\nCommand" as Command
-Class XYZCommand
+
 
 Class "<<interface>>\nLogic" as Logic
 Class LogicManager
@@ -39,7 +39,7 @@ LogicManager --> Storage
 Storage --[hidden] Model
 Command .[hidden]up.> Storage
 Command .right.> Model
-note right of XYZCommand: XYZCommand = AddCommand, \nFindCommand, etc
+note right of XYZCommand: XYZCommand = AddHouseholdCommand, \nEditSessionCommand, etc
 
 Logic ..> CommandResult
 LogicManager .down.> CommandResult
