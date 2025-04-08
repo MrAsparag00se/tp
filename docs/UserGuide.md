@@ -24,29 +24,29 @@ Em-Social thereby frees you up to focus on what matters most: **supporting the c
 
 ## Table of Contents
 - [Em-Social User Guide](#em-social-user-guide)
-   - [Introduction](#-Introduction)
-   - [Quick Start](#-quick-start)
-   - [User Interface Overview](#-user-interface-overview)
-   - [Household Management](#-household-management)
+   - [Introduction](#introduction)
+   - [Quick Start](#quick-start)
+   - [User Interface Overview](#user-interface-overview)
+   - [Household Management](#household-management)
       - [Add a household](#add-a-household): `add`
       - [Edit a household](#edit-a-household): `edit`
       - [Delete a household](#delete-a-household): `delete`
       - [Find households](#find-households): `find`
       - [List all households](#list-all-households): `list`
-   - [Session Management](#-session-management)
+   - [Session Management](#session-management)
       - [Add a session](#add-a-session): `add-s`
       - [Edit a session](#edit-a-session): `edit-s`
       - [Delete a session](#delete-a-session): `delete-s`
       - [View full session](#view-full-session): `view-full-s`
       - [View household sessions](#view-household-sessions): `view-s`
-   - [General Commands](#-general-commands)
+   - [General Commands](#general-commands)
       - [Clear data](#clear-data): `clear`
       - [Help](#help): `help`
       - [Exiting the program](#exiting-the-program): `exit`
-   - [Make the Most out of Em-Social](#-make-the-most-out-of-em-social)
-   - [Frequently Asked Questions](#-frequently-asked-questions)
-   - [Glossary](#-glossary)
-   - [Command Summary](#-command-summary)
+   - [Make the Most out of Em-Social](#make-the-most-out-of-em-social)
+   - [Frequently Asked Questions](#frequently-asked-questions)
+   - [Glossary](#glossary)
+   - [Command Summary](#command-summary)
 
 
 --------------------------------------------------------------------------------------------------------------------
