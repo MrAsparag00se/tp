@@ -25,7 +25,7 @@ Em-Social thereby frees you up to focus on what matters most: **supporting the c
 ## Table of Contents
 - [Em-Social User Guide](#em-social-user-guide)
    - [Introduction](#-Introduction)
-   - [Quick Start](#-quick-start)
+   - [Quick Start](#quick-start)
    - [User Interface Overview](#-user-interface-overview)
    - [Household Management](#-household-management)
       - [Add a household](#add-a-household): `add`
