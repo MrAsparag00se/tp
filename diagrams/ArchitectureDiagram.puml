@@ -2,16 +2,7 @@
 !include <office/Concepts/globe_internet>
 !include <office/Concepts/documents>
 !include <office/Users/user>
-
-' Define colors
-!define UI_COLOR #1D8900
-!define UI_COLOR_T1 #3FC71B
-!define LOGIC_COLOR #3333C4
-!define LOGIC_COLOR_T2 #7777F7
-!define STORAGE_COLOR #DD0052
-!define STORAGE_COLOR_T1 #F97D91
-!define MODEL_COLOR #A38300
-!define MODEL_COLOR_T2 #FFD242
+!include style.puml
 
 Package " "<<Rectangle>>{
     Class UI UI_COLOR
@@ -24,6 +15,7 @@ Package " "<<Rectangle>>{
 
 Class "<$user>" as User MODEL_COLOR_T2
 Class "<$documents>" as File UI_COLOR_T1
+
 
 UI -[#green]> Logic
 UI -right[#green]-> Model

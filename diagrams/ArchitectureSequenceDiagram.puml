@@ -19,6 +19,8 @@ activate model MODEL_COLOR
 
 model -[MODEL_COLOR]-> logic
 deactivate model
+model -[hidden]> model :
+destroy model
 
 logic -[LOGIC_COLOR]> storage : saveHouseholdBook()
 activate storage STORAGE_COLOR
@@ -27,13 +29,18 @@ storage -[STORAGE_COLOR]> storage : Save to file
 activate storage STORAGE_COLOR_T1
 storage --[STORAGE_COLOR]> storage
 deactivate storage
-
 storage --[STORAGE_COLOR]> logic
 deactivate storage
+storage -[hidden]> storage :
+destroy storage
 
 logic --[LOGIC_COLOR]> ui
 deactivate logic
+logic -[hidden]> logic :
+destroy logic
 
 ui--[UI_COLOR]> user
 deactivate ui
+ui -[hidden]> ui :
+destroy ui
 @enduml
