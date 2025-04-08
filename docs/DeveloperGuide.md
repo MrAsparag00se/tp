@@ -88,12 +88,15 @@ The `UI` component,
 
 **API** : [`Logic.java`](https://github.com/AY2425S2-CS2103T-F10-2/tp/blob/master/src/main/java/seedu/address/logic/Logic.java)
 
+Here's a (partial) class diagram of the `Logic` component:
+
+<puml src="diagrams/LogicClassDiagram.puml" width="550"/>
+
 The sequence diagram below illustrates the interactions within the `Logic` component, taking `execute("delete id/H000001")` API call as an example.
 
 <puml src="diagrams/DeleteSequenceDiagram.puml" alt="Interactions Inside the Logic Component for the `delete id/H000001` Command" />
 
 **Note:** The lifeline for `DeleteHouseholdCommandParser` should end at the destroy marker (X) but due to a limitation of PlantUML, the lifeline continues till the end of diagram.
-
 
 How the `Logic` component works:
 
